@@ -1,0 +1,52 @@
+{
+  "name": "frint-utils",
+  "version": "0.1.0",
+  "description": "Utility belt to extend, simplify and improve the development experience on frint",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint --color 'test/**/*.js'",
+    "test": "mocha",
+    "build": "babel src --out-dir lib",
+    "cover": "nyc --reporter=lcov --require babel-register mocha && npm run cover:report",
+    "cover:report": "nyc report",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-eslint": "^7.1.1",
+    "babel-preset-travix": "^1.1.1",
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.16",
+    "eslint": "^3.15.0",
+    "mocha": "^3.2.0",
+    "nyc": "^10.1.2"
+  },
+  "keywords": [
+    "frint-utils",
+    "frint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Travix-International/frint-utils.git"
+  },
+  "author": {
+    "name": "Travix International",
+    "url": "http://travix.com"
+  },
+  "contributors": [
+    {
+      "name": "Eduard Trutsyk",
+      "url": "https://github.com/EduardTrutsyk"
+    },
+    {
+      "name": "Ricardo Machado",
+      "url": "https://github.com/mAiNiNfEcTiOn"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Travix-International/frint-utils/issues"
+  },
+  "homepage": "https://github.com/Travix-International/frint-utils#readme"
+}
