@@ -16,6 +16,9 @@ $ npm install --save frint-utils
 
 Usage:
 
+
+Creating reducer
+
 ```js
 import { createReducer } from 'frint-utils';
 import * as ActionTypes from '../constants/ActionTypes';
@@ -27,6 +30,16 @@ export const todos = createReducer(initialState, {
     return [...state, action.text];
   }
 });
+```
+
+Creating core application
+
+```js
+import App from './app';
+import config from './config';
+
+const coreApp = new App(config);
+injectCoreApp(coreApp);
 ```
 
 ## License

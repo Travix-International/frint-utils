@@ -1,11 +1,11 @@
 // Core App creator
 
 /**
- * Set core app to window object and protect it's deleting/rewritig
+ * Set core app to window object and protect it's deleting/rewriting
  *
  * @method injectCoreApp
  * @param {Object} App core application
- * @returns {Object} core application object
+ * @returns {void}
  */
 export default function injectCoreApp(coreApp) {
   let app = null;
